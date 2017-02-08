@@ -81,7 +81,7 @@
 			'error_seter': {
 				'form' : function (data, text, forms, fields, validators, settings, ok_seter, error_seter, nothing_seter) {
 					console.log('from: status error');
-					alert('Неправельные натройки формы');
+					alert('Неправильные настройки формы');
 					data['info_form'].addClass("field-error").removeClass("field-ok");
 					fields.message.text(text);
 					forms.show_form.apply( this , [ID_INFO_FORM]);
