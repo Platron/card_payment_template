@@ -81,7 +81,6 @@
 			'error_setter': {
 				'form' : function (data, text, forms, fields, validators, settings, ok_setter, error_setter, nothing_setter) {
 					console.log('from: status error');
-					alert('Неправильные настройки формы');
 					data['info_form'].addClass("field-error").removeClass("field-ok");
 					fields.message.text(text);
 					forms.show_form.apply( this , [ID_INFO_FORM]);
@@ -94,7 +93,6 @@
 				},
 				'card_num' : function (fields, validators, settings, ok_setter, error_setter, nothing_setter) {
 					console.log('card_num: status error');
-					alert('Ошибка в номере карты');
 					fields.card_num.removeClass("field-ok").addClass("field-error");
 				}
 				
